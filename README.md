@@ -6,14 +6,10 @@
 
 ## Table of Contents
 
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-
 - [Problem Statement](#problem-statement)
 - [Proposed Solution](#proposed-solution)
 - [Technologies Used](#technologies-used)
 - [About The Application](#about-the-application)
-- [Architecture](#architecture)
 - [Usage](#usage)
 - [Contributors](#contributors)
 
@@ -29,6 +25,7 @@ To develop a solution that optimizes flight navigation by integrating real-time 
 -Authentication features</br>
 -Interactive Dashboard: Features an interactive and responsive dashboard for meaningful insights and decision-making.</br>
 - Video demo-  https://drive.google.com/file/d/1GW2xmoI5vmY8NhTs6Vz2S3aXblSXWkYB/view?usp=sharing
+  
 ## Technologies used
 - Frontend: <br/>
    Framework - React<br/>
@@ -58,8 +55,6 @@ socket.off("simulationUpdate") :-  Removes the event listener for the simulation
 socket.on('updateActiveSimulations', (){} ) :- Server will send updates related to active simulations.</br>
 socket.off("airportData") :-  Removes the event listener for the airportData event </br>
 socket.off("simulationResponse") :-   Removes the event listener for the simulationResponse event </br>
-
-
 socket.emit("startSimulation", (){} ) :-  Trigger the server to start a simulation process.</br>
 socket.emit("pauseSimulation") :-  Pause the simulation process. </br>
 socket.emit("resumeSimulation") :-  Resume the simulation process. </br>
@@ -67,23 +62,14 @@ socket.emit("stopSimulation") :-  Stop the simulation process </br>
 io.on("connection", (socket) {} ) :-  Establish the socket connection between the server and the newly connected client. </br>
 socket.on("startSimulation", (){} ) :-  Start the simulation to send the aeroplane data to the client </br>
 
-
 HTTP endpoints  -
 http.createServer(app) :- create an HTTP server in Node.js, using the core http module. </br>
-
 app.use("/api/v1/users", userRoutes) :- mounting the userRoutes middleware or sub-application to the path "/api/v1/users".
-
 router.post('/login', decryptMiddleware,login) :- This route handles POST requests to "/login". When a request is made to this endpoint, it first passes through the decryptMiddleware for decryption if there is encrypted data.
-
 router.post('/validate-token', authenticateToken) :- This route handles POST requests to "/validate-token".It directly goes to the authenticateToken middleware function. This middleware is responsible for validating the token included in the request headers.
-
 app.use("/api/v1/reports", reportRoutes) :-  mounting the reportRoutes middleware or sub-application to the path "/api/v1/reports".
-
 router.get('/allreports', getAllReports) :- it invokes the getAllReports function. This function likely retrieves all reports from the database or some data source and sends them back as a response.
-
 router.get('/user/:userName', getUserReports) :- it invokes the getUserReports function, passing the username as a parameter. This function likely retrieves reports associated with the specified user from the database or some data source and sends them back as a response.
-
-
 
 ## Usage
 
@@ -101,7 +87,6 @@ nodemon server.js</br>
 
 Flask Server</br>
 python app.py</br>
-
 
 
 ## Contributors
