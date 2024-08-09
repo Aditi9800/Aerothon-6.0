@@ -4,6 +4,10 @@
   <br>
 </h1>
 
+- Video demo-  https://drive.google.com/file/d/1GW2xmoI5vmY8NhTs6Vz2S3aXblSXWkYB/view?usp=sharing
+- PPT -https://docs.google.com/presentation/d/1RTqpfs620gZVyl9cJTM0tdhqh9uRPI4u/edit?usp=sharing&ouid=105239086567324466179&rtpof=true&sd=true
+
+
 ## Table of Contents
 
 - [Problem Statement](#problem-statement)
@@ -24,7 +28,7 @@ To develop a solution that optimizes flight navigation by integrating real-time 
 -Comprehensive Access: Airlines have complete access to viewing flight data and navigation updates.</br>
 -Authentication features</br>
 -Interactive Dashboard: Features an interactive and responsive dashboard for meaningful insights and decision-making.</br>
-- Video demo-  https://drive.google.com/file/d/1GW2xmoI5vmY8NhTs6Vz2S3aXblSXWkYB/view?usp=sharing
+
   
 ## Technologies used
 - Frontend: <br/>
